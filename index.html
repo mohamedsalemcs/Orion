@@ -1,0 +1,1600 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Orion</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="./assets/css/line-awesome.min.css">
+  <link rel="stylesheet" href="./assets/slick/slick.css">
+  <link rel="stylesheet" href="./assets/slick/slick-theme.css">
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+  <!-- Start Header  -->
+  <header class="fixed-top box-shadow header" id="navbar">
+    <!-- TOP Bar -->
+    <div class="top-bar primary-bg py-2">
+      <div class="mx-5 px-3 d-flex justify-content-between align-items-center">
+
+        <div class="text-white fs-12">
+          <a href="" class="text-white">
+            <i class="la la-phone"></i>
+            +201093783787
+          </a>
+          <span class="mx-2">|</span>
+          <a href="" class="text-white">
+            <i class="la la-envelope"></i>
+            info@orion-eg.com
+          </a>
+        </div>
+        <div class="text-white fs-12">
+          <a href="" class="text-white">
+            <i class="la la-map-marked-alt"></i>
+            Contact Us
+          </a>
+          <span class="mx-2">|</span>
+          <a href="" class="text-white">
+            <i class="la la-question-circle-o"></i>
+            FAQs
+          </a>
+          <div class="dropdown d-inline-block mx-3">
+            <button class="btn dropdown-toggle bg-transaprent fs-12 text-white btn-sm br-0 py-0" type="button" id="triggerId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <img src="assets/images/icons/en.svg" alt="">
+              EN
+            </button>
+            <div class="dropdown-menu" aria-labelledby="triggerId">
+              <button class="dropdown-item" href="#">
+                <img src="assets/images/icons/ar.svg" alt="">
+                Arabic
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-light py-2 px-lg-4 mx-lg-5">
+      <a class=" navbar-brand" href="#">
+        <img src="assets/images/logo.svg" alt="logo Header" class="logo-header" width="150">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto mr-5 align-items-center">
+          <li class="nav-item karaz_offerings">
+            <a class="nav-link" href="#karaz_offerings">Home
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+
+          <li class="nav-item target_audiences">
+            <a class="nav-link" href="#target_audiences">TMG Payemnts</a>
+          </li>
+
+          <li class="nav-item clienting">
+            <a class="nav-link" href="#clienting">About Orion</a>
+          </li>
+
+          <li class="nav-item contacting">
+            <a class="nav-link" href="#contacting">Services</a>
+          </li>
+          <li class="nav-item contacting">
+            <a class="nav-link" href="#contacting">Partners</a>
+          </li>
+          <li class="nav-item contacting">
+            <a class="nav-link" href="#contacting">News Letter</a>
+          </li>
+          <li class="nav-item login">
+
+            <div class="dropdown">
+              <button class="btn nav-link" type="button" id="triggerId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <!-- <i class="la la-user-circle"></i> -->
+                Login
+              </button>
+              <div class="dropdown-menu px-4 py-4" aria-labelledby="triggerId">
+
+                <h4 class="f_B text-center primary-light-txt mb-4 mt-3">Login to your account!</h4>
+
+                <!-- Username -->
+                <div class="form-group">
+                  <div class="input-group">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text">
+                        <i class="la la-user"></i>
+                      </span>
+                    </div>
+                    <input type="text" class="form-control" id="username" placeholder="Username" required="">
+                    <!-- ERROR -->
+                    <div class="invalid-feedback" style="width: 100%;">
+                      Your username is required.
+                    </div>
+                  </div>
+                </div>
+
+                <!-- password -->
+                <div class="form-group">
+                  <div class="input-group">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text">
+                        <i class="la la-lock"></i>
+                      </span>
+                    </div>
+                    <input type="password" class="form-control" id="password" placeholder="Password" required="">
+                    <!-- ERROR -->
+                    <div class="invalid-feedback" style="width: 100%;">
+                      Your password is required.
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Submit -->
+                <div class="px-3 pt-3">
+                  <button type="submit" class="btn btn-block secondary-alt-bg text-white login-btn">
+                    <i class="la la-key"></i>
+                    Login
+                  </button>
+                </div>
+
+                <!-- Forget Password -->
+                <div class="px-3 pt-3">
+                  <a href="#" class="dark-txt fs-12 f_M forget-pass">Forget Password?</a>
+                </div>
+
+                <!-- Text to Sign Up -->
+
+                <div class="px-3 pt-3 pb-3">
+                  <p class="f_M dark-txt fs-18">Don't have an account?
+                    <a href="#" class="f_B primary-light-txt no-account">Sign Up</a>
+                  </p>
+                </div>
+
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!--=================================-->
+
+  <!-- Start Carousel -->
+  <div id="carouselId" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselId" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselId" data-slide-to="1"></li>
+      <li data-target="#carouselId" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner h-100" role="listbox">
+      <!-- Item -->
+      <div class="carousel-item h-100 active">
+        <img src="assets/images/slider-bg1.png" alt="First slide" class="w-100 h-100 slider-img">
+        <div class="carousel-caption">
+          <div class="row mx-0 w-90">
+            <div class="col-md-6">
+              <!-- Headline Div -->
+              <div class="heading">
+                <div class="">
+                  <span class="fs-42 f_M animate__animated animate__lightSpeedInLeft d-block">
+                    THIS IS YOUR DIGITAL
+                  </span>
+                  <span class="fs-42 f_M animate__animated animate__lightSpeedInRight d-block">
+                    WORLD PARTNER.
+                  </span>
+                </div>
+                <div class="px-5 mx-5">
+                  <hr>
+                </div>
+                <a href="#contacting" class="btn pay-btn mt-4 animate__animated animate__zoomIn animate__delay-1s">Pay Your Bills</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Item -->
+      <div class="carousel-item h-100">
+        <img src="assets/images/slider-bg2.png" alt="First slide" class="w-100 h-100 slider-img">
+        <div class="carousel-caption">
+          <div class="row mx-0 w-90">
+            <div class="col-md-5">
+              <!-- Headline Div -->
+              <div class="heading">
+                <div class="">
+                  <span class="fs-42 f_M animate__animated animate__lightSpeedInLeft d-block">
+                    Online Quick Recharge.
+                  </span>
+                  <span class="fs-42 f_M animate__animated animate__lightSpeedInRight d-block">
+                    Save Time and Money!
+                  </span>
+                </div>
+                <div class="px-5 mx-5">
+                  <hr>
+                </div>
+                <a href="#contacting" class="btn pay-btn mt-4 animate__animated animate__zoomIn animate__delay-1s">Pay Your Bills</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Item -->
+      <div class="carousel-item h-100">
+        <img src="assets/images/slider-bg3.png" alt="First slide" class="w-100 h-100 slider-img">
+        <div class="carousel-caption">
+          <div class="row mx-0 w-90">
+            <div class="col-md-6">
+              <!-- Headline Div -->
+              <div class="heading">
+                <div class="">
+                  <span class="fs-42 f_M animate__animated animate__lightSpeedInLeft d-block">
+                    THIS IS YOUR DIGITAL
+                  </span>
+                  <span class="fs-42 f_M animate__animated animate__lightSpeedInRight d-block">
+                    WORLD PARTNER.
+                  </span>
+                </div>
+                <div class="px-5 mx-5">
+                  <hr>
+                </div>
+                <a href="#contacting" class="btn pay-btn mt-4 animate__animated animate__zoomIn animate__delay-1s">Pay Your Bills</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <a class="carousel-control-prev" href="#carouselId" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselId" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+
+  <!--=================================-->
+  <!-- Pay Section -->
+  <div class="pay-section">
+    <!-- Inquiry -->
+    <div class="text-center mb-4 pt-5 mt-4">
+      <h1 class="primary-txt fs-32 f_B">Payment Facilities</h1>
+      <p class="dark-txt fs-16">You can inquire about monthly bill by card number</p>
+    </div>
+
+    <!--Start Tabs-->
+    <div class="mt-4 mb-5 pt-4 pay-tabs">
+      <ul class="nav nav-tabs d-flex justify-content-center px-3 border-0" id="myTab" role="tablist">
+        <li class="nav-item p-0 my-0 mx-0 position-relative">
+          <a class="nav-link px-1 active" id="Electricity_Bills-tab" data-toggle="tab" href="#Electricity_Bills" role="tab" aria-controls="Electricity_Bills" aria-selected="true">
+            <i class="la la-plug d-block text-center mb-3"></i>
+            Electricity Bills
+          </a>
+        </li>
+        <li class="nav-item p-0 my-0 mx-0 position-relative">
+          <a class="nav-link px-1" id="Water_Bills-tab" data-toggle="tab" href="#Water_Bills" role="tab" aria-controls="Water_Bills" aria-selected="false">
+            <i class="la la-water d-block text-center mb-3"></i>
+            Water Bills
+          </a>
+        </li>
+        <li class="nav-item p-0 my-0 mx-0 position-relative">
+          <a class="nav-link px-1" id="Gas_Bills-tab" data-toggle="tab" href="#Gas_Bills" role="tab" aria-controls="Gas_Bills" aria-selected="false">
+            <i class="la la-gas-pump d-block text-center mb-3"></i>
+            Gas Bills
+          </a>
+        </li>
+        <li class="nav-item p-0 my-0 mx-0 position-relative">
+          <a class="nav-link px-1" id="maintainance-tab" data-toggle="tab" href="#maintainance" role="tab" aria-controls="maintainance" aria-selected="false">
+            <i class="la la-wrench d-block text-center mb-3"></i>
+            maintainance
+          </a>
+        </li>
+        <li class="nav-item p-0 my-0 mx-0 position-relative">
+          <a class="nav-link px-1" id="Real_Estate_Installemnt-tab" data-toggle="tab" href="#Real_Estate_Installemnt" role="tab" aria-controls="Real_Estate_Installemnt" aria-selected="false">
+            <i class="la la-building d-block text-center mb-3"></i>
+            Real Estate Installemnt
+          </a>
+        </li>
+        <li class="nav-item p-0 my-0 mx-0 position-relative">
+          <a class="nav-link px-1" id="Cleaning_Services-tab" data-toggle="tab" href="#Cleaning_Services" role="tab" aria-controls="Cleaning_Services" aria-selected="false">
+            <i class="la la-broom d-block text-center mb-3"></i>
+            Cleaning Services
+          </a>
+        </li>
+      </ul>
+      <!--Start Content of All Tabs-->
+      <div class="tab-content mt-3" id="myTabContent">
+        <!--Tab One Content-->
+        <div class="tab-pane fade show active" id="Electricity_Bills" role="tabpanel" aria-labelledby="Electricity_Bills-tab">
+          <div class="container px-4 pt-5 pb-4 inquiry-form">
+            <div class="row mx-0">
+
+              <div class="col-md-5 d-flex align-items-center">
+                <div class="form-group w-100">
+                  <label for="" class="mb-1 fs-16">Unit Number</label>
+                  <select class="form-control" name="" id="">
+                    <option>--select--</option>
+                    <option>Unit One</option>
+                    <option>Unit Two</option>
+                    <option>Unit Three</option>
+                    <option>Unit Four</option>
+                    <option>Water Five</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-md-5 d-flex align-items-center">
+                <div class="form-group w-100">
+                  <label for="" class="mb-1 fs-16">Subscriber Number</label>
+                  <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="">
+                </div>
+              </div>
+              <div class="col-md-2 d-flex align-items-center">
+                <button class="btn go-pay fs-16 f_M btn-block">Show Bills</button>
+              </div>
+
+            </div>
+
+            <!-- Search Results -->
+            <div class="search-results pt-3">
+              <div class="row mx-0">
+
+                <div class="col-12" id="accordianId" role="tablist" aria-multiselectable="true">
+                  <div class="card">
+                    <div class="card-header secondary-alt-bg text-white" role="tab" id="section1HeaderId">
+                      <span class="mb-0 panel-title fs-16 f_B">
+                        <a data-toggle="collapse" data-parent="#accordianId" href="#section1ContentId" aria-expanded="true" aria-controls="section1ContentId">
+                          #Bill_Number
+                        </a>
+                      </span>
+                    </div>
+                    <div id="section1ContentId" class="collapse show" role="tabpanel" aria-labelledby="section1HeaderId">
+                      <div class="card-body">
+                        <table class="table table-striped">
+                          <thead>
+                            <tr>
+                              <th>Account Number</th>
+                              <th>Bill Type</th>
+                              <th>Bill Value</th>
+                              <th>Actions</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td scope="row">5982342345</td>
+                              <td>Electronic</td>
+                              <td>300 EGP</td>
+                              <td>
+                                <button class="btn primary-light-bg text-white fs-16 f_M btn-sm px-4">Pay</button>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <!--Tab Two Content-->
+        <div class="tab-pane fade" id="Water_Bills" role="tabpanel" aria-labelledby="Water_Bills-tab">
+          <div class="container px-4 pt-5 pb-4 inquiry-form">
+            <div class="row mx-0">
+
+              <div class="col-md-5 d-flex align-items-center">
+                <div class="form-group w-100">
+                  <label for="" class="mb-1 fs-16">Unit Number</label>
+                  <select class="form-control" name="" id="">
+                    <option>--select--</option>
+                    <option>Unit One</option>
+                    <option>Unit Two</option>
+                    <option>Unit Three</option>
+                    <option>Unit Four</option>
+                    <option>Water Five</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-md-5 d-flex align-items-center">
+                <div class="form-group w-100">
+                  <label for="" class="mb-1 fs-16">Subscriber Number</label>
+                  <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="">
+                </div>
+              </div>
+              <div class="col-md-2 d-flex align-items-center">
+                <button class="btn go-pay fs-16 f_M btn-block">Show Bills</button>
+              </div>
+
+            </div>
+
+            <!-- Search Results -->
+            <div class="search-results pt-3">
+              <div class="row mx-0">
+
+                <div class="col-12" id="accordianId" role="tablist" aria-multiselectable="true">
+                  <div class="card">
+                    <div class="card-header secondary-alt-bg text-white" role="tab" id="section1HeaderId">
+                      <span class="mb-0 panel-title fs-16 f_B">
+                        <a data-toggle="collapse" data-parent="#accordianId" href="#section1ContentId" aria-expanded="true" aria-controls="section1ContentId">
+                          #Bill_Number
+                        </a>
+                      </span>
+                    </div>
+                    <div id="section1ContentId" class="collapse show" role="tabpanel" aria-labelledby="section1HeaderId">
+                      <div class="card-body">
+                        <table class="table table-striped">
+                          <thead>
+                            <tr>
+                              <th>Account Number</th>
+                              <th>Bill Type</th>
+                              <th>Bill Value</th>
+                              <th>Actions</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td scope="row">5982342345</td>
+                              <td>Electronic</td>
+                              <td>300 EGP</td>
+                              <td>
+                                <button class="btn primary-light-bg text-white fs-16 f_M btn-sm px-4">Pay</button>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <!--End Tab Two Content-->
+        <!--Tab three Content-->
+        <div class="tab-pane fade" id="Gas_Bills" role="tabpanel" aria-labelledby="Gas_Bills-tab">
+          <div class="container px-4 pt-5 pb-4 inquiry-form">
+            <div class="row mx-0">
+
+              <div class="col-md-5 d-flex align-items-center">
+                <div class="form-group w-100">
+                  <label for="" class="mb-1 fs-16">Unit Number</label>
+                  <select class="form-control" name="" id="">
+                    <option>--select--</option>
+                    <option>Unit One</option>
+                    <option>Unit Two</option>
+                    <option>Unit Three</option>
+                    <option>Unit Four</option>
+                    <option>Water Five</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-md-5 d-flex align-items-center">
+                <div class="form-group w-100">
+                  <label for="" class="mb-1 fs-16">Subscriber Number</label>
+                  <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="">
+                </div>
+              </div>
+              <div class="col-md-2 d-flex align-items-center">
+                <button class="btn go-pay fs-16 f_M btn-block">Show Bills</button>
+              </div>
+
+            </div>
+
+            <!-- Search Results -->
+            <div class="search-results pt-3">
+              <div class="row mx-0">
+
+                <div class="col-12" id="accordianId" role="tablist" aria-multiselectable="true">
+                  <div class="card">
+                    <div class="card-header secondary-alt-bg text-white" role="tab" id="section1HeaderId">
+                      <span class="mb-0 panel-title fs-16 f_B">
+                        <a data-toggle="collapse" data-parent="#accordianId" href="#section1ContentId" aria-expanded="true" aria-controls="section1ContentId">
+                          #Bill_Number
+                        </a>
+                      </span>
+                    </div>
+                    <div id="section1ContentId" class="collapse show" role="tabpanel" aria-labelledby="section1HeaderId">
+                      <div class="card-body">
+                        <table class="table table-striped">
+                          <thead>
+                            <tr>
+                              <th>Account Number</th>
+                              <th>Bill Type</th>
+                              <th>Bill Value</th>
+                              <th>Actions</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td scope="row">5982342345</td>
+                              <td>Electronic</td>
+                              <td>300 EGP</td>
+                              <td>
+                                <button class="btn primary-light-bg text-white fs-16 f_M btn-sm px-4">Pay</button>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <!--End Tab three Content-->
+        <!--Tab four Content-->
+        <div class="tab-pane fade" id="maintainance" role="tabpanel" aria-labelledby="maintainance-tab">
+          <div class="container px-4 pt-5 pb-4 inquiry-form">
+            <div class="row mx-0">
+
+              <div class="col-md-5 d-flex align-items-center">
+                <div class="form-group w-100">
+                  <label for="" class="mb-1 fs-16">Unit Number</label>
+                  <select class="form-control" name="" id="">
+                    <option>--select--</option>
+                    <option>Unit One</option>
+                    <option>Unit Two</option>
+                    <option>Unit Three</option>
+                    <option>Unit Four</option>
+                    <option>Water Five</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-md-5 d-flex align-items-center">
+                <div class="form-group w-100">
+                  <label for="" class="mb-1 fs-16">Subscriber Number</label>
+                  <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="">
+                </div>
+              </div>
+              <div class="col-md-2 d-flex align-items-center">
+                <button class="btn go-pay fs-16 f_M btn-block">Show Bills</button>
+              </div>
+
+            </div>
+
+            <!-- Search Results -->
+            <div class="search-results pt-3">
+              <div class="row mx-0">
+
+                <div class="col-12" id="accordianId" role="tablist" aria-multiselectable="true">
+                  <div class="card">
+                    <div class="card-header secondary-alt-bg text-white" role="tab" id="section1HeaderId">
+                      <span class="mb-0 panel-title fs-16 f_B">
+                        <a data-toggle="collapse" data-parent="#accordianId" href="#section1ContentId" aria-expanded="true" aria-controls="section1ContentId">
+                          #Bill_Number
+                        </a>
+                      </span>
+                    </div>
+                    <div id="section1ContentId" class="collapse show" role="tabpanel" aria-labelledby="section1HeaderId">
+                      <div class="card-body">
+                        <table class="table table-striped">
+                          <thead>
+                            <tr>
+                              <th>Account Number</th>
+                              <th>Bill Type</th>
+                              <th>Bill Value</th>
+                              <th>Actions</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td scope="row">5982342345</td>
+                              <td>Electronic</td>
+                              <td>300 EGP</td>
+                              <td>
+                                <button class="btn primary-light-bg text-white fs-16 f_M btn-sm px-4">Pay</button>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <!--Tab Five Content-->
+        <div class="tab-pane fade" id="Real_Estate_Installemnt" role="tabpanel" aria-labelledby="Real_Estate_Installemnt-tab">
+          <div class="container px-4 pt-5 pb-4 inquiry-form">
+            <div class="row mx-0">
+
+              <div class="col-md-5 d-flex align-items-center">
+                <div class="form-group w-100">
+                  <label for="" class="mb-1 fs-16">Unit Number</label>
+                  <select class="form-control" name="" id="">
+                    <option>--select--</option>
+                    <option>Unit One</option>
+                    <option>Unit Two</option>
+                    <option>Unit Three</option>
+                    <option>Unit Four</option>
+                    <option>Water Five</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-md-5 d-flex align-items-center">
+                <div class="form-group w-100">
+                  <label for="" class="mb-1 fs-16">Subscriber Number</label>
+                  <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="">
+                </div>
+              </div>
+              <div class="col-md-2 d-flex align-items-center">
+                <button class="btn go-pay fs-16 f_M btn-block">Show Bills</button>
+              </div>
+
+            </div>
+
+            <!-- Search Results -->
+            <div class="search-results pt-3">
+              <div class="row mx-0">
+
+                <div class="col-12" id="accordianId" role="tablist" aria-multiselectable="true">
+                  <div class="card">
+                    <div class="card-header secondary-alt-bg text-white" role="tab" id="section1HeaderId">
+                      <span class="mb-0 panel-title fs-16 f_B">
+                        <a data-toggle="collapse" data-parent="#accordianId" href="#section1ContentId" aria-expanded="true" aria-controls="section1ContentId">
+                          #Bill_Number
+                        </a>
+                      </span>
+                    </div>
+                    <div id="section1ContentId" class="collapse show" role="tabpanel" aria-labelledby="section1HeaderId">
+                      <div class="card-body">
+                        <table class="table table-striped">
+                          <thead>
+                            <tr>
+                              <th>Account Number</th>
+                              <th>Bill Type</th>
+                              <th>Bill Value</th>
+                              <th>Actions</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td scope="row">5982342345</td>
+                              <td>Electronic</td>
+                              <td>300 EGP</td>
+                              <td>
+                                <button class="btn primary-light-bg text-white fs-16 f_M btn-sm px-4">Pay</button>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <!--Tab Six Content-->
+        <div class="tab-pane fade" id="Cleaning_Services" role="tabpanel" aria-labelledby="Cleaning_Services-tab">
+          <div class="container px-4 pt-5 pb-4 inquiry-form">
+            <div class="row mx-0">
+
+              <div class="col-md-5 d-flex align-items-center">
+                <div class="form-group w-100">
+                  <label for="" class="mb-1 fs-16">Unit Number</label>
+                  <select class="form-control" name="" id="">
+                    <option>--select--</option>
+                    <option>Unit One</option>
+                    <option>Unit Two</option>
+                    <option>Unit Three</option>
+                    <option>Unit Four</option>
+                    <option>Water Five</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-md-5 d-flex align-items-center">
+                <div class="form-group w-100">
+                  <label for="" class="mb-1 fs-16">Subscriber Number</label>
+                  <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="">
+                </div>
+              </div>
+              <div class="col-md-2 d-flex align-items-center">
+                <button class="btn go-pay fs-16 f_M btn-block">Show Bills</button>
+              </div>
+
+            </div>
+
+            <!-- Search Results -->
+            <div class="search-results pt-3">
+              <div class="row mx-0">
+
+                <div class="col-12" id="accordianId" role="tablist" aria-multiselectable="true">
+                  <div class="card">
+                    <div class="card-header secondary-alt-bg text-white" role="tab" id="section1HeaderId">
+                      <span class="mb-0 panel-title fs-16 f_B">
+                        <a data-toggle="collapse" data-parent="#accordianId" href="#section1ContentId" aria-expanded="true" aria-controls="section1ContentId">
+                          #Bill_Number
+                        </a>
+                      </span>
+                    </div>
+                    <div id="section1ContentId" class="collapse show" role="tabpanel" aria-labelledby="section1HeaderId">
+                      <div class="card-body">
+                        <table class="table table-striped">
+                          <thead>
+                            <tr>
+                              <th>Account Number</th>
+                              <th>Bill Type</th>
+                              <th>Bill Value</th>
+                              <th>Actions</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td scope="row">5982342345</td>
+                              <td>Electronic</td>
+                              <td>300 EGP</td>
+                              <td>
+                                <button class="btn primary-light-bg text-white fs-16 f_M btn-sm px-4">Pay</button>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <!--End Tab four Content-->
+      </div>
+      <!--End Content of All Tabs-->
+    </div>
+  </div>
+
+  <!-- ==================================== -->
+
+  <!-- About Us -->
+  <div class="about py-5">
+    <div class="about-mar">
+      <h1 class="fs-32 f_B">
+        Best online services company
+        <br>
+        near the world
+      </h1>
+      <p class="w-75 fs-15">
+        Orion is the exclusive one stop shop for all the services needed in Madinaty.
+        <br>
+        We at Orion are customer-focused, and we adopt a continuous improvement philosophy in everything
+        <br>
+        we do to ensure the highest satisfaction levels for our customers and stakeholders.
+      </p>
+
+      <div class="row mx-0">
+        <div class="col-md-7 pl-0 pr-5">
+
+          <div class="mt-4 pb-5 about-tabs">
+            <ul class="nav nav-tabs d-flex justify-content-start border-0" id="myTab" role="tablist">
+              <li class="nav-item p-0 my-0 mx-0 position-relative">
+                <a class="nav-link px-1 active" id="about-tab" data-toggle="tab" href="#about" role="tab" aria-controls="about" aria-selected="true">
+                  About
+                </a>
+              </li>
+              <li class="nav-item p-0 my-0 mx-0 position-relative">
+                <a class="nav-link px-1" id="mission-tab" data-toggle="tab" href="#mission" role="tab" aria-controls="mission" aria-selected="true">
+                  Mission
+                </a>
+              </li>
+              <li class="nav-item p-0 my-0 mx-0 position-relative">
+                <a class="nav-link px-1" id="vission-tab" data-toggle="tab" href="#vission" role="tab" aria-controls="vission" aria-selected="true">
+                  Vission
+                </a>
+              </li>
+            </ul>
+            <!--Start Content of All Tabs-->
+            <div class="tab-content mt-4" id="myTabContent">
+              <!--Tab One Content-->
+              <div class="tab-pane fade show active" id="about" role="tabpanel" aria-labelledby="about-tab">
+
+                <h4>Let Us Be Your Partners Preferred Online Partner</h4>
+                <p class="fs-14 pt-1 f_M">
+                  We are introducing integrated services through a One-Stop-Portal,
+                  enriching our clients’ lifestyle and optimizing their daily spend.
+                  We offer a wide variety of service provider options that guarantee a tailored service at your preferred convenience,
+                  the time of your choosing and the price that suits you.
+                </p>
+
+                <ul class="list-unstyled">
+                  <li>
+                    <i class="la la-check-double secondary-alt-txt la-lg"></i>
+                    <span class="secondary-alt-txt f_B fs-16">Convenience</span>
+                    <p class="px-4 fs-14 f_M">Our wide selection of service providers enables you to order and schedule the service
+                      at the time of your choosing
+                    </p>
+                  </li>
+                  <li>
+                    <i class="la la-check-double secondary-alt-txt la-lg"></i>
+                    <span class="secondary-alt-txt f_B fs-16">Price Guarantee</span>
+                    <p class="px-4 fs-14 f_M">Ordering through Orion guarantees you a lower listed price by a service provider than if ordered directly through the service provider
+                    </p>
+                  </li>
+                  <li>
+                    <i class="la la-check-double secondary-alt-txt la-lg"></i>
+                    <span class="secondary-alt-txt f_B fs-16">Quality</span>
+                    <p class="px-4 fs-14 f_M">
+                      We guarantee quality satisfaction through our wide network. We re-perform the service for you if it is not up to your satisfaction through the service provider of your choice at no extra cost or your money back
+                    </p>
+                  </li>
+                </ul>
+
+              </div>
+              <!--Tab Two Content-->
+              <div class="tab-pane fade" id="mission" role="tabpanel" aria-labelledby="mission-tab">
+                <div class="mx-5 px-3 about-m mt-5">
+                  <p class="f_M fs-15">
+                    We deliver excellence in providing a smart market place for services with the utmost focus on
+                    sustainable cost-efficient work-flows while being led by innovative technology,
+                    satisfying the needs and exceeding the expectations of our customers, business partners and all other
+                    stakeholders.
+                  </p>
+                </div>
+              </div>
+              <!--Tab Three Content-->
+              <div class="tab-pane fade" id="vission" role="tabpanel" aria-labelledby="vission-tab">
+                <div class="mx-5 px-3 about-m mt-5">
+                  <p class="f_M fs-15 w-75">
+                    Become the optimum go-to smart market place App for services.
+                    <br>
+                    Helping people live a better and easier life.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <div class="col-md-5">
+          <img src="assets/images/about-pattern.png" alt="" class="pattern">
+          <img src="assets/images/about2.png" alt="" class="aboutt">
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Section Services -->
+
+  <div class="services pb-5">
+    <div class="text-center mb-4 pt-5 mt-4">
+      <h1 class="primary-txt fs-32 f_B">Orion Services</h1>
+      <p class="dark-txt fs-16">You can inquire about monthly bill by card number</p>
+    </div>
+
+    <div class="d-flex justify-content-center mt-4 pt-2">
+      <button class="btn filter-button mx-1 active" data-filter="all">All Services</button>
+      <button class="btn filter-button mx-1" data-filter="CarServices">Car Services</button>
+      <button class="btn filter-button mx-1" data-filter="Maintainance">Maintainance Services</button>
+      <button class="btn filter-button mx-1" data-filter="HomeServices">Home Sevices</button>
+      <button class="btn filter-button mx-1" data-filter="Property">Property Management</button>
+      <!-- <button class="btn filter-button mx-1" data-filter="Personal">Personal Services</button> -->
+      <button class="btn filter-button mx-1" data-filter="Payment">Payment Services</button>
+      <button class="btn filter-button mx-1" data-filter="FoodDelivery">Food & Delivery</button>
+      <button class="btn filter-button mx-1" data-filter="OtherServices">Other Services</button>
+    </div>
+
+    <div class="row mx-0 ser-row">
+
+      <!-- repeatable service -->
+      <div class="gallery_product px-2 col-md-2 col-6 mb-3 filter Property">
+        <div class="card">
+          <img class="card-img-top" src="assets/images/services/property.jpg" alt="">
+          <div class="card-body p-2">
+            <div class="s-name py-1">
+              <span class="primary-txt fs-16 f_B line-1-3">Property Management</span>
+            </div>
+            <p class="card-text h-2 fs-14 mb-0 line-1-2 text-center">Lorem ipsum, dolor sit amet consectetur adipisicing </p>
+          </div>
+          <div class="text-center pb-2 more">
+            <a href="#" class="btn btn-sm">
+              Know More
+              <i class="la la-angle-double-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- repeatable service -->
+      <div class="gallery_product px-2 col-md-2 col-6 mb-3 filter HomeServices">
+        <div class="card">
+          <img class="card-img-top" src="assets/images/services/Finishing0.jpg" alt="">
+          <div class="card-body p-2">
+            <div class="s-name py-1">
+              <span class="primary-txt fs-16 f_B line-1-3">Home Design & Finishing</span>
+            </div>
+            <p class="card-text h-2 fs-14 mb-0 line-1-2 text-center">Lorem ipsum, dolor sit amet consectetur adipisicing </p>
+          </div>
+          <div class="text-center pb-2 more">
+            <a href="#" class="btn btn-sm">
+              Know More
+              <i class="la la-angle-double-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- repeatable service -->
+      <div class="gallery_product px-2 col-md-2 col-6 mb-3 filter HomeServices">
+        <div class="card">
+          <img class="card-img-top" src="assets/images/services/move-furniture.jpg" alt="">
+          <div class="card-body p-2">
+            <div class="s-name py-1">
+              <span class="primary-txt fs-16 f_B line-1-3">Furniture Moving</span>
+            </div>
+            <p class="card-text h-2 fs-14 mb-0 line-1-2 text-center">Lorem ipsum, dolor sit amet consectetur adipisicing </p>
+          </div>
+          <div class="text-center pb-2 more">
+            <a href="#" class="btn btn-sm">
+              Know More
+              <i class="la la-angle-double-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- repeatable service -->
+      <div class="gallery_product px-2 col-md-2 col-6 mb-3 filter HomeServices">
+        <div class="card">
+          <img class="card-img-top" src="assets/images/services/cleaning_spray_closeup.jpg" alt="">
+          <div class="card-body p-2">
+            <div class="s-name py-1">
+              <span class="primary-txt fs-16 f_B line-1-3">Housekeeping & Disinfection</span>
+            </div>
+            <p class="card-text h-2 fs-14 mb-0 line-1-2 text-center">Lorem ipsum, dolor sit amet consectetur adipisicing </p>
+          </div>
+          <div class="text-center pb-2 more">
+            <a href="#" class="btn btn-sm">
+              Know More
+              <i class="la la-angle-double-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- repeatable service -->
+      <div class="gallery_product px-2 col-md-2 col-6 mb-3 filter HomeServices">
+        <div class="card">
+          <img class="card-img-top" src="assets/images/services/pestpredictions.jpg" alt="">
+          <div class="card-body p-2">
+            <div class="s-name py-1">
+              <span class="primary-txt fs-16 f_B line-1-3">Pest Control</span>
+            </div>
+            <p class="card-text h-2 fs-14 mb-0 line-1-2 text-center">Lorem ipsum, dolor sit amet consectetur adipisicing </p>
+          </div>
+          <div class="text-center pb-2 more">
+            <a href="#" class="btn btn-sm">
+              Know More
+              <i class="la la-angle-double-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- repeatable service -->
+      <div class="gallery_product px-2 col-md-2 col-6 mb-3 filter Property">
+        <div class="card">
+          <img class="card-img-top" src="assets/images/services/landscape-curb.jpg" alt="">
+          <div class="card-body p-2">
+            <div class="s-name py-1">
+              <span class="primary-txt fs-16 f_B line-1-3">Landscaping</span>
+            </div>
+            <p class="card-text h-2 fs-14 mb-0 line-1-2 text-center">Lorem ipsum, dolor sit amet consectetur adipisicing </p>
+          </div>
+          <div class="text-center pb-2 more">
+            <a href="#" class="btn btn-sm">
+              Know More
+              <i class="la la-angle-double-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- repeatable service -->
+      <div class="gallery_product px-2 col-md-2 col-6 mb-3 filter HomeServices">
+        <div class="card">
+          <img class="card-img-top" src="assets/images/services/Carpentry-Plumbing-Electricity.jpg" alt="">
+          <div class="card-body p-2">
+            <div class="s-name py-1">
+              <span class="primary-txt fs-16 f_B line-1-3">Carpentry, Plumbing and Electricity</span>
+            </div>
+            <p class="card-text h-2 fs-14 mb-0 line-1-2 text-center">Lorem ipsum, dolor sit amet consectetur adipisicing </p>
+          </div>
+          <div class="text-center pb-2 more">
+            <a href="#" class="btn btn-sm">
+              Know More
+              <i class="la la-angle-double-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- repeatable service -->
+      <div class="gallery_product px-2 col-md-2 col-6 mb-3 filter Property">
+        <div class="card">
+          <img class="card-img-top" src="assets/images/services/paint.jpg" alt="">
+          <div class="card-body p-2">
+            <div class="s-name py-1">
+              <span class="primary-txt fs-16 f_B line-1-3">Paint Jobs</span>
+            </div>
+            <p class="card-text h-2 fs-14 mb-0 line-1-2 text-center">Lorem ipsum, dolor sit amet consectetur adipisicing </p>
+          </div>
+          <div class="text-center pb-2 more">
+            <a href="#" class="btn btn-sm">
+              Know More
+              <i class="la la-angle-double-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- repeatable service -->
+      <div class="gallery_product px-2 col-md-2 col-6 mb-3 filter Maintainance">
+        <div class="card">
+          <img class="card-img-top" src="assets/images/services/Satellite-maintenance.jpg" alt="">
+          <div class="card-body p-2">
+            <div class="s-name py-1">
+              <span class="primary-txt fs-16 f_B line-1-3">Satellite maintenance</span>
+            </div>
+            <p class="card-text h-2 fs-14 mb-0 line-1-2 text-center">Lorem ipsum, dolor sit amet consectetur adipisicing </p>
+          </div>
+          <div class="text-center pb-2 more">
+            <a href="#" class="btn btn-sm">
+              Know More
+              <i class="la la-angle-double-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- repeatable service -->
+      <div class="gallery_product px-2 col-md-2 col-6 mb-3 filter Maintainance">
+        <div class="card">
+          <img class="card-img-top" src="assets/images/services/Air-Conditioner-Repair.jpg" alt="">
+          <div class="card-body p-2">
+            <div class="s-name py-1">
+              <span class="primary-txt fs-16 f_B line-1-3">Air conditioner maintenance</span>
+            </div>
+            <p class="card-text h-2 fs-14 mb-0 line-1-2 text-center">Lorem ipsum, dolor sit amet consectetur adipisicing </p>
+          </div>
+          <div class="text-center pb-2 more">
+            <a href="#" class="btn btn-sm">
+              Know More
+              <i class="la la-angle-double-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- repeatable service -->
+      <div class="gallery_product px-2 col-md-2 col-6 mb-3 filter Maintainance">
+        <div class="card">
+          <img class="card-img-top" src="assets/images/services/Appliances-Maintenance.png" alt="">
+          <div class="card-body p-2">
+            <div class="s-name py-1">
+              <span class="primary-txt fs-16 f_B line-1-3">Appliances Maintenance</span>
+            </div>
+            <p class="card-text h-2 fs-14 mb-0 line-1-2 text-center">Lorem ipsum, dolor sit amet consectetur adipisicing </p>
+          </div>
+          <div class="text-center pb-2 more">
+            <a href="#" class="btn btn-sm">
+              Know More
+              <i class="la la-angle-double-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- repeatable service -->
+      <div class="gallery_product px-2 col-md-2 col-6 mb-3 filter HomeServices">
+        <div class="card">
+          <img class="card-img-top" src="assets/images/services/Laundry-DryClean.jpg" alt="">
+          <div class="card-body p-2">
+            <div class="s-name py-1">
+              <span class="primary-txt fs-16 f_B line-1-3">Laundry & Dry Clean</span>
+            </div>
+            <p class="card-text h-2 fs-14 mb-0 line-1-2 text-center">Lorem ipsum, dolor sit amet consectetur adipisicing </p>
+          </div>
+          <div class="text-center pb-2 more">
+            <a href="#" class="btn btn-sm">
+              Know More
+              <i class="la la-angle-double-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- repeatable service -->
+      <div class="gallery_product px-2 col-md-2 col-6 mb-3 filter FoodDelivery">
+        <div class="card">
+          <img class="card-img-top" src="assets/images/services/Grocery.jpg" alt="">
+          <div class="card-body p-2">
+            <div class="s-name py-1">
+              <span class="primary-txt fs-16 f_B line-1-3">Grocery</span>
+            </div>
+            <p class="card-text h-2 fs-14 mb-0 line-1-2 text-center">Lorem ipsum, dolor sit amet consectetur adipisicing </p>
+          </div>
+          <div class="text-center pb-2 more">
+            <a href="#" class="btn btn-sm">
+              Know More
+              <i class="la la-angle-double-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- repeatable service -->
+      <div class="gallery_product px-2 col-md-2 col-6 mb-3 filter FoodDelivery">
+        <div class="card">
+          <img class="card-img-top" src="assets/images/services/Delivery.png" alt="">
+          <div class="card-body p-2">
+            <div class="s-name py-1">
+              <span class="primary-txt fs-16 f_B line-1-3">Delivery</span>
+            </div>
+            <p class="card-text h-2 fs-14 mb-0 line-1-2 text-center">Lorem ipsum, dolor sit amet consectetur adipisicing </p>
+          </div>
+          <div class="text-center pb-2 more">
+            <a href="#" class="btn btn-sm">
+              Know More
+              <i class="la la-angle-double-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- repeatable service -->
+      <div class="gallery_product px-2 col-md-2 col-6 mb-3 filter HomeServices">
+        <div class="card">
+          <img class="card-img-top" src="assets/images/services/Electricity-Charge.jpg" alt="">
+          <div class="card-body p-2">
+            <div class="s-name py-1">
+              <span class="primary-txt fs-16 f_B line-1-3">Electricity Charge</span>
+            </div>
+            <p class="card-text h-2 fs-14 mb-0 line-1-2 text-center">Lorem ipsum, dolor sit amet consectetur adipisicing </p>
+          </div>
+          <div class="text-center pb-2 more">
+            <a href="#" class="btn btn-sm">
+              Know More
+              <i class="la la-angle-double-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- repeatable service -->
+      <div class="gallery_product px-2 col-md-2 col-6 mb-3 filter CarServices">
+        <div class="card">
+          <img class="card-img-top" src="assets/images/services/Car-Rescue.jpg" alt="">
+          <div class="card-body p-2">
+            <div class="s-name py-1">
+              <span class="primary-txt fs-16 f_B line-1-3">Car Rescue</span>
+            </div>
+            <p class="card-text h-2 fs-14 mb-0 line-1-2 text-center">Lorem ipsum, dolor sit amet consectetur adipisicing </p>
+          </div>
+          <div class="text-center pb-2 more">
+            <a href="#" class="btn btn-sm">
+              Know More
+              <i class="la la-angle-double-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- repeatable service -->
+      <div class="gallery_product px-2 col-md-2 col-6 mb-3 filter CarServices">
+        <div class="card">
+          <img class="card-img-top" src="assets/images/services/Car-Wash.jpg" alt="">
+          <div class="card-body p-2">
+            <div class="s-name py-1">
+              <span class="primary-txt fs-16 f_B line-1-3">Car Wash</span>
+            </div>
+            <p class="card-text h-2 fs-14 mb-0 line-1-2 text-center">Lorem ipsum, dolor sit amet consectetur adipisicing </p>
+          </div>
+          <div class="text-center pb-2 more">
+            <a href="#" class="btn btn-sm">
+              Know More
+              <i class="la la-angle-double-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- repeatable service -->
+      <div class="gallery_product px-2 col-md-2 col-6 mb-3 filter CarServices">
+        <div class="card">
+          <img class="card-img-top" src="assets/images/services/Car-Maintenance.jpg" alt="">
+          <div class="card-body p-2">
+            <div class="s-name py-1">
+              <span class="primary-txt fs-16 f_B line-1-3">Car Maintenance</span>
+            </div>
+            <p class="card-text h-2 fs-14 mb-0 line-1-2 text-center">Lorem ipsum, dolor sit amet consectetur adipisicing </p>
+          </div>
+          <div class="text-center pb-2 more">
+            <a href="#" class="btn btn-sm">
+              Know More
+              <i class="la la-angle-double-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- repeatable service -->
+      <div class="gallery_product px-2 col-md-2 col-6 mb-3 filter OtherServices">
+        <div class="card">
+          <img class="card-img-top" src="assets/images/services/Ride-Hailing.jpg" alt="">
+          <div class="card-body p-2">
+            <div class="s-name py-1">
+              <span class="primary-txt fs-16 f_B line-1-3">Ride Hailing & Sharing</span>
+            </div>
+            <p class="card-text h-2 fs-14 mb-0 line-1-2 text-center">Lorem ipsum, dolor sit amet consectetur adipisicing </p>
+          </div>
+          <div class="text-center pb-2 more">
+            <a href="#" class="btn btn-sm">
+              Know More
+              <i class="la la-angle-double-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- repeatable service -->
+      <div class="gallery_product px-2 col-md-2 col-6 mb-3 filter OtherServices">
+        <div class="card">
+          <img class="card-img-top" src="assets/images/services/Beauty-Personal.jpg" alt="">
+          <div class="card-body p-2">
+            <div class="s-name py-1">
+              <span class="primary-txt fs-16 f_B line-1-3">Beauty & Personal Care</span>
+            </div>
+            <p class="card-text h-2 fs-14 mb-0 line-1-2 text-center">Lorem ipsum, dolor sit amet consectetur adipisicing </p>
+          </div>
+          <div class="text-center pb-2 more">
+            <a href="#" class="btn btn-sm">
+              Know More
+              <i class="la la-angle-double-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- repeatable service -->
+      <div class="gallery_product px-2 col-md-2 col-6 mb-3 filter OtherServices">
+        <div class="card">
+          <img class="card-img-top" src="assets/images/services/Pets-Care.jpg" alt="">
+          <div class="card-body p-2">
+            <div class="s-name py-1">
+              <span class="primary-txt fs-16 f_B line-1-3">Pets Care</span>
+            </div>
+            <p class="card-text h-2 fs-14 mb-0 line-1-2 text-center">Lorem ipsum, dolor sit amet consectetur adipisicing </p>
+          </div>
+          <div class="text-center pb-2 more">
+            <a href="#" class="btn btn-sm">
+              Know More
+              <i class="la la-angle-double-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- repeatable service -->
+      <div class="gallery_product px-2 col-md-2 col-6 mb-3 filter HomeServices">
+        <div class="card">
+          <img class="card-img-top" src="assets/images/services/Home-Medical-Services.jpg" alt="">
+          <div class="card-body p-2">
+            <div class="s-name py-1">
+              <span class="primary-txt fs-16 f_B line-1-3">Home Medical Services</span>
+            </div>
+            <p class="card-text h-2 fs-14 mb-0 line-1-2 text-center">Lorem ipsum, dolor sit amet consectetur adipisicing </p>
+          </div>
+          <div class="text-center pb-2 more">
+            <a href="#" class="btn btn-sm">
+              Know More
+              <i class="la la-angle-double-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- repeatable service -->
+      <div class="gallery_product px-2 col-md-2 col-6 mb-3 filter OtherServices">
+        <div class="card">
+          <img class="card-img-top" src="assets/images/services/Traveling-services.jpg" alt="">
+          <div class="card-body p-2">
+            <div class="s-name py-1">
+              <span class="primary-txt fs-16 f_B line-1-3">Traveling services</span>
+            </div>
+            <p class="card-text h-2 fs-14 mb-0 line-1-2 text-center">Lorem ipsum, dolor sit amet consectetur adipisicing </p>
+          </div>
+          <div class="text-center pb-2 more">
+            <a href="#" class="btn btn-sm">
+              Know More
+              <i class="la la-angle-double-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- repeatable service -->
+      <div class="gallery_product px-2 col-md-2 col-6 mb-3 filter Payment">
+        <div class="card">
+          <img class="card-img-top" src="assets/images/services/Payment-Services.png" alt="">
+          <div class="card-body p-2">
+            <div class="s-name py-1">
+              <span class="primary-txt fs-16 f_B line-1-3">Payment Services</span>
+            </div>
+            <p class="card-text h-2 fs-14 mb-0 line-1-2 text-center">Lorem ipsum, dolor sit amet consectetur adipisicing </p>
+          </div>
+          <div class="text-center pb-2 more">
+            <a href="#" class="btn btn-sm">
+              Know More
+              <i class="la la-angle-double-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
+
+  </div>
+
+
+
+  <!-- Start Section Our Clients -->
+  <!-- ==================================== -->
+  <!-- clients -->
+  <section id="clienting" class="clients__">
+    <div class="container position-relative">
+      <h4 class="text-white text-center f_B text-uppercase">Our Partners</h4>
+      <p class="section-desc text-white text-center mb-5">Meet some of our market happy partners</p>
+      <div class="slick-carousel section-content">
+        <div class="slick-item">
+          <img src="assets/images/partners/alshahd.jpg" alt="">
+        </div>
+        <div class="slick-item">
+          <img src="assets/images/partners/Builders.jpg" alt="">
+        </div>
+        <div class="slick-item">
+          <img src="assets/images/partners/logoWithTextEn.png" alt="">
+        </div>
+        <div class="slick-item">
+          <img src="assets/images/partners/corpec.png" alt="">
+        </div>
+        <div class="slick-item">
+          <img src="assets/images/partners/goodsmart.png" alt="">
+        </div>
+        <div class="slick-item">
+          <img src="assets/images/partners/MobiServe.png" alt="">
+        </div>
+        <div class="slick-item">
+          <img src="assets/images/partners/Mrsool-01.png" alt="">
+        </div>
+        <div class="slick-item">
+          <img src="assets/images/partners/Ruva.png" alt="">
+        </div>
+        <div class="slick-item">
+          <img src="assets/images/partners/UCO.jpeg" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- END Section Our Clients -->
+  <!-- ==================================== -->
+
+  <!-- Start Section Contact US -->
+  <!-- ==================================== -->
+  <!-- contact -->
+  <section id="contacting" class="contact__ section-padding">
+    <div class="container">
+      <div class="row">
+
+        <div class="section-head col-lg-8 mx-auto text-center mb-lg-4">
+          <h4 class="mb-3 primary-txt text-uppercase f_B mt-5">Get <span>In</span> Touch</h4>
+          <p>We are a passionate digital design agency that specializes in beautiful and easy-to-use digital design &amp; web development services.</p>
+        </div>
+
+        <div class="col-lg-5">
+          <div class="contact-info mb-md50">
+            <div class="item mb-3">
+              <div class="d-flex align-items-center justify-content-start secondary-alt-txt">
+                <i class="la la-phone la-lg"></i>
+                <h6 class="f_B mb-0">Phone</h6>
+              </div>
+              <ul class="px-4 pt-2">
+                <li class="px-2 f_M black-txt fs-15">+20 01093783787</li>
+                <li class="px-2 f_M black-txt fs-15">02 238333652</li>
+              </ul>
+            </div>
+            <div class="item mb-3">
+              <div class="d-flex align-items-center justify-content-start secondary-alt-txt">
+                <i class="la la-envelope la-lg"></i>
+                <h6 class="f_B mb-0">Email</h6>
+              </div>
+              <ul class="px-4 pt-2">
+                <li class="px-2 f_M black-txt fs-15">info@orion-eg.com</li>
+                <li class="px-2 f_M black-txt fs-15">support@orion-eg.com</li>
+              </ul>
+            </div>
+            <div class="item mb-3">
+              <div class="d-flex align-items-center justify-content-start secondary-alt-txt">
+                <i class="la la-map-marker la-lg"></i>
+                <h6 class="f_B mb-0">Address</h6>
+              </div>
+              <ul class="px-4 pt-2">
+                <li class="px-2 f_M black-txt fs-15">4655 Carter Street ,Olney, Illinois</li>
+                <li class="px-2 f_M black-txt fs-15">4655 Carter Street ,Olney, Illinois</li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+        <div class="col-lg-1"></div>
+
+        <div class="col-lg-6">
+          <form class="form" id="contact-form" method="post" action="contact.php" novalidate="true">
+
+            <div class="messages"></div>
+
+            <div class="controls">
+
+              <div class="row">
+
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <input id="form_name" class="form-control" type="text" name="name" placeholder="Name" required="required">
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <input id="form_email" class="form-control" type="email" name="email" placeholder="Email" required="required">
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <input id="form_subject" class="form-control" type="text" name="subject" placeholder="Subject">
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <textarea id="form_message" class="form-control" name="message" placeholder="Message" rows="4" required="required"></textarea>
+                  </div>
+                </div>
+
+                <div class="col-md-12">
+                  <button type="submit" class="btn primary-bg btn-block"><span>Send Message</span></button>
+                </div>
+
+              </div>
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- End Section Contact US -->
+  <!-- ==================================== -->
+
+  <!-- Start Footer  -->
+  <footer class="pt-5">
+    <div class="footer">
+      <div class="row mx-0">
+
+        <div class="col-md-4">
+
+          <div class="intro">
+            <img src="assets/images/logo.png" alt="" width="170">
+            <p class="fs-14 mt-3">Orion is the exclusive one stop shop for all the services needed in Madinaty.
+              <br>
+              <br>
+              We at Orion are customer-focused, and we adopt a continuous improvement philosophy in everything we do to ensure the highest satisfaction levels for our customers and stakeholders.
+            </p>
+          </div>
+
+        </div>
+
+        <div class="col-md-4 quick-links pt-4">
+          <div class="px-5">
+            <h5>Quick Links</h5>
+            <ul class="px-4 pt-3">
+              <li class="mb-2"><a href="#">Our Services</a></li>
+              <li class="mb-2"><a href="#">About Orion</a></li>
+              <li class="mb-2"><a href="#">Orion App</a></li>
+              <li class="mb-2"><a href="#">Contact Us</a></li>
+              <li class="mb-2"><a href="#">Terms & Conditions</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-md-4 subscribe pt-4">
+          <h5>Subscribe to receive neswletters and notifications</h5>
+          <div class="form-group">
+            <input type="text" name="" id="" class="form-control" placeholder="Type Your Email" aria-describedby="helpId">
+            <button class="btn send-btn">
+              <i class="la la-send"></i>
+            </button>
+          </div>
+          <div class="social-icons d-flex justify-content-start align-items-center pt-4">
+            <a href="#" class="mx-2">
+              <i class="la la-facebook"></i>
+            </a>
+            <a href="#" class="mx-2">
+              <i class="la la-instagram"></i>
+            </a>
+            <a href="#" class="mx-2">
+              <i class="la la-twitter"></i>
+            </a>
+            <a href="#" class="mx-2">
+              <i class="la la-youtube"></i>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+    <div class="primary-light-bg text-center p-3">
+      <span class="fs-14 f_B">
+        &copy; all rights reserved 2022 - Orion Copmapny
+      </span>
+    </div>
+  </footer>
+  <!-- End Footer  -->
+
+  <!-- Back to top -->
+  <a href="#" class="back-to-top" style="display: none;">
+    <i class="la la-angle-double-up"></i>
+  </a>
+
+  <!-- JS -->
+  <script src="assets/js/jquery-3.3.1.js"></script>
+  <script src="assets/js/popper.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="./assets/slick/slick.min.js"></script>
+  <script src="assets/js/custom.js"></script>
+</body>
+
+</html>
+
+<!-- Start Connect Email -->
+<!-- Modal -->
+<div class="modal fade connectn" id="modelId" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content bg-transparent border-0">
+      <div class="modal-body p-0 bg-transparent border-0">
+        <div class="connect-email">
+          <div class="container_text">
+            <h3 class="text-center">
+              LET'S <br />
+              CONNECT
+            </h3>
+            <ul class="list-unstyled text-center">
+              <li class="text-center">
+                <a href="Nourhan.Ismail@Karaz.com">
+                  Nourhan.Ismail@Karaz.com</a>
+              </li>
+              <li class="mb-2">+20 100 541 3501</li>
+              <li>
+                <a href="#" class="mr-2">
+                  <img src="assets/images/icons/facebook.svg" alt="facebook" /></a>
+                <a href="#">
+                  <img src="assets/images/icons/instagram.svg" alt="instagram" /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End Connect Email -->
