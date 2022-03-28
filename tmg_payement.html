@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Orion</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="./assets/css/line-awesome.min.css">
+  <link rel="stylesheet" href="./assets/slick/slick.css">
+  <link rel="stylesheet" href="./assets/slick/slick-theme.css">
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+  <!-- Start Header  -->
+  <header class="fixed-top box-shadow header" id="navbar">
+    <!-- TOP Bar -->
+    <div class="top-bar primary-bg py-2">
+      <div class="mx-5 px-3 d-flex justify-content-between align-items-center">
+
+        <div class="text-white fs-12">
+          <a href="#" class="text-white">
+            <i class="la la-phone"></i>
+            +201093783787
+          </a>
+          <span class="mx-2">|</span>
+          <a href="#" class="text-white">
+            <i class="la la-envelope"></i>
+            info@orion-eg.com
+          </a>
+        </div>
+        <div class="text-white fs-12">
+          <a href="#Contacting" class="text-white">
+            <i class="la la-map-marked-alt"></i>
+            Contact Us
+          </a>
+          <span class="mx-2">|</span>
+          <a href="#FAQs" class="text-white FAQs">
+            <i class="la la-question-circle-o"></i>
+            FAQs
+          </a>
+          <div class="dropdown d-inline-block mx-3">
+            <button class="btn dropdown-toggle bg-transaprent fs-12 text-white btn-sm br-0 py-0" type="button" id="triggerId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <img src="assets/images/icons/en.svg" alt="">
+              EN
+            </button>
+            <div class="dropdown-menu" aria-labelledby="triggerId">
+              <button class="dropdown-item" href="#">
+                <img src="assets/images/icons/ar.svg" alt="">
+                Arabic
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-light py-2 px-lg-4 mx-lg-5">
+      <a class=" navbar-brand" href="index.html">
+        <img src="assets/images/logo.svg" alt="logo Header" class="logo-header" width="150">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto mr-5 align-items-center">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link active" href="tmg_payement.html">TMG Payemnts</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About Orion</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="services.html">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="partners.html">Partners</a>
+          </li>
+          <!-- <li class="nav-item">
+            <a class="nav-link" href="#">News Letter</a>
+          </li> -->
+          <li class="nav-item login">
+
+            <div class="dropdown">
+              <button class="btn nav-link" type="button" id="triggerId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <!-- <i class="la la-user-circle"></i> -->
+                Login
+              </button>
+              <div class="dropdown-menu px-4 py-4" aria-labelledby="triggerId">
+
+                <h4 class="f_B text-center primary-light-txt mb-4 mt-3">Login to your account!</h4>
+
+                <!-- Username -->
+                <div class="form-group">
+                  <div class="input-group">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text">
+                        <i class="la la-user"></i>
+                      </span>
+                    </div>
+                    <input type="text" class="form-control" id="username" placeholder="Username" required="">
+                    <!-- ERROR -->
+                    <div class="invalid-feedback" style="width: 100%;">
+                      Your username is required.
+                    </div>
+                  </div>
+                </div>
+
+                <!-- password -->
+                <div class="form-group">
+                  <div class="input-group">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text">
+                        <i class="la la-lock"></i>
+                      </span>
+                    </div>
+                    <input type="password" class="form-control" id="password" placeholder="Password" required="">
+                    <!-- ERROR -->
+                    <div class="invalid-feedback" style="width: 100%;">
+                      Your password is required.
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Submit -->
+                <div class="px-3 pt-3">
+                  <button type="submit" class="btn btn-block secondary-alt-bg text-white login-btn">
+                    <i class="la la-key"></i>
+                    Login
+                  </button>
+                </div>
+
+                <!-- Forget Password -->
+                <div class="px-3 pt-3">
+                  <a href="#" class="dark-txt fs-12 f_M forget-pass">Forget Password?</a>
+                </div>
+
+                <!-- Text to Sign Up -->
+
+                <div class="px-3 pt-3 pb-3">
+                  <p class="f_M dark-txt fs-18">Don't have an account?
+                    <a href="sign-up.html" class="f_B primary-light-txt no-account">Sign Up</a>
+                  </p>
+                </div>
+
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!--=================================-->
+  <!-- Pay Section -->
+  <div class="pay-section">
+    <!-- Inquiry -->
+    <div class="text-center mb-4 pt-5 mt-4">
+      <h1 class="primary-txt fs-32 f_B">Payment Facilities</h1>
+      <p class="dark-txt fs-16">You can inquire about monthly bill by card number</p>
+    </div>
+
+    <!--Start Tabs-->
+    <div class="mt-4 mb-5 pt-4 pay-tabs">
+      <ul class="nav nav-tabs d-flex justify-content-center px-3 border-0" id="myTab" role="tablist">
+        <li class="nav-item p-0 my-0 mx-0 position-relative">
+          <a class="nav-link px-1 active" id="Electricity_Bills-tab" data-toggle="tab" href="#Electricity_Bills" role="tab" aria-controls="Electricity_Bills" aria-selected="true">
+            <i class="la la-plug d-block text-center mb-3"></i>
+            Electricity Bills
+          </a>
+        </li>
+        <li class="nav-item p-0 my-0 mx-0 position-relative">
+          <a class="nav-link px-1" id="Water_Bills-tab" data-toggle="tab" href="#Water_Bills" role="tab" aria-controls="Water_Bills" aria-selected="false">
+            <i class="la la-water d-block text-center mb-3"></i>
+            Water Bills
+          </a>
+        </li>
+        <li class="nav-item p-0 my-0 mx-0 position-relative">
+          <a class="nav-link px-1" id="Gas_Bills-tab" data-toggle="tab" href="#Gas_Bills" role="tab" aria-controls="Gas_Bills" aria-selected="false">
+            <i class="la la-gas-pump d-block text-center mb-3"></i>
+            Gas Bills
+          </a>
+        </li>
+        <li class="nav-item p-0 my-0 mx-0 position-relative">
+          <a class="nav-link px-1" id="maintainance-tab" data-toggle="tab" href="#maintainance" role="tab" aria-controls="maintainance" aria-selected="false">
+            <i class="la la-wrench d-block text-center mb-3"></i>
+            maintainance
+          </a>
+        </li>
+        <li class="nav-item p-0 my-0 mx-0 position-relative">
+          <a class="nav-link px-1" id="Real_Estate_Installemnt-tab" data-toggle="tab" href="#Real_Estate_Installemnt" role="tab" aria-controls="Real_Estate_Installemnt" aria-selected="false">
+            <i class="la la-building d-block text-center mb-3"></i>
+            Real Estate Installemnt
+          </a>
+        </li>
+        <li class="nav-item p-0 my-0 mx-0 position-relative">
+          <a class="nav-link px-1" id="Cleaning_Services-tab" data-toggle="tab" href="#Cleaning_Services" role="tab" aria-controls="Cleaning_Services" aria-selected="false">
+            <i class="la la-broom d-block text-center mb-3"></i>
+            Cleaning Services
+          </a>
+        </li>
+      </ul>
+      <!--Start Content of All Tabs-->
+      <div class="tab-content mt-3" id="myTabContent">
+        <!--Tab One Content-->
+        <div class="tab-pane fade show active" id="Electricity_Bills" role="tabpanel" aria-labelledby="Electricity_Bills-tab">
+          <div class="container px-4 pt-5 pb-4 inquiry-form">
+            <div class="row mx-0">
+
+              <div class="col-md-5 d-flex align-items-center">
+                <div class="form-group w-100">
+                  <label for="" class="mb-1 fs-16">Unit Number</label>
+                  <select class="form-control" name="" id="">
+                    <option>--select--</option>
+                    <option>Unit One</option>
+                    <option>Unit Two</option>
+                    <option>Unit Three</option>
+                    <option>Unit Four</option>
+                    <option>Water Five</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-md-5 d-flex align-items-center">
+                <div class="form-group w-100">
+                  <label for="" class="mb-1 fs-16">Subscriber Number</label>
+                  <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="">
+                </div>
+              </div>
+              <div class="col-md-2 d-flex align-items-center">
+                <button class="btn go-pay fs-16 f_M btn-block">Show Bills</button>
+              </div>
+
+            </div>
+
+            <!-- Search Results -->
+            <div class="search-results pt-3">
+              <div class="row mx-0">
+
+                <div class="col-12" id="accordianId" role="tablist" aria-multiselectable="true">
+                  <div class="card">
+                    <div class="card-header secondary-alt-bg text-white" role="tab" id="section1HeaderId">
+                      <span class="mb-0 panel-title fs-16 f_B">
+                        <a data-toggle="collapse" data-parent="#accordianId" href="#section1ContentId" aria-expanded="true" aria-controls="section1ContentId">
+                          #Bill_Number
+                        </a>
+                      </span>
+                    </div>
+                    <div id="section1ContentId" class="collapse show" role="tabpanel" aria-labelledby="section1HeaderId">
+                      <div class="card-body">
+                        <table class="table table-striped">
+                          <thead>
+                            <tr>
+                              <th>Account Number</th>
+                              <th>Bill Type</th>
+                              <th>Bill Value</th>
+                              <th>Actions</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td scope="row">5982342345</td>
+                              <td>Electronic</td>
+                              <td>300 EGP</td>
+                              <td>
+                                <button class="btn primary-light-bg text-white fs-16 f_M btn-sm px-4">Pay</button>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <!--Tab Two Content-->
+        <div class="tab-pane fade" id="Water_Bills" role="tabpanel" aria-labelledby="Water_Bills-tab">
+          <div class="container px-4 pt-5 pb-4 inquiry-form">
+            <div class="row mx-0">
+
+              <div class="col-md-5 d-flex align-items-center">
+                <div class="form-group w-100">
+                  <label for="" class="mb-1 fs-16">Unit Number</label>
+                  <select class="form-control" name="" id="">
+                    <option>--select--</option>
+                    <option>Unit One</option>
+                    <option>Unit Two</option>
+                    <option>Unit Three</option>
+                    <option>Unit Four</option>
+                    <option>Water Five</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-md-5 d-flex align-items-center">
+                <div class="form-group w-100">
+                  <label for="" class="mb-1 fs-16">Subscriber Number</label>
+                  <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="">
+                </div>
+              </div>
+              <div class="col-md-2 d-flex align-items-center">
+                <button class="btn go-pay fs-16 f_M btn-block">Show Bills</button>
+              </div>
+
+            </div>
+
+            <!-- Search Results -->
+            <div class="search-results pt-3">
+              <div class="row mx-0">
+
+                <div class="col-12" id="accordianId" role="tablist" aria-multiselectable="true">
+                  <div class="card">
+                    <div class="card-header secondary-alt-bg text-white" role="tab" id="section1HeaderId">
+                      <span class="mb-0 panel-title fs-16 f_B">
+                        <a data-toggle="collapse" data-parent="#accordianId" href="#section1ContentId" aria-expanded="true" aria-controls="section1ContentId">
+                          #Bill_Number
+                        </a>
+                      </span>
+                    </div>
+                    <div id="section1ContentId" class="collapse show" role="tabpanel" aria-labelledby="section1HeaderId">
+                      <div class="card-body">
+                        <table class="table table-striped">
+                          <thead>
+                            <tr>
+                              <th>Account Number</th>
+                              <th>Bill Type</th>
+                              <th>Bill Value</th>
+                              <th>Actions</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td scope="row">5982342345</td>
+                              <td>Electronic</td>
+                              <td>300 EGP</td>
+                              <td>
+                                <button class="btn primary-light-bg text-white fs-16 f_M btn-sm px-4">Pay</button>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <!--End Tab Two Content-->
+        <!--Tab three Content-->
+        <div class="tab-pane fade" id="Gas_Bills" role="tabpanel" aria-labelledby="Gas_Bills-tab">
+          <div class="container px-4 pt-5 pb-4 inquiry-form">
+            <div class="row mx-0">
+
+              <div class="col-md-5 d-flex align-items-center">
+                <div class="form-group w-100">
+                  <label for="" class="mb-1 fs-16">Unit Number</label>
+                  <select class="form-control" name="" id="">
+                    <option>--select--</option>
+                    <option>Unit One</option>
+                    <option>Unit Two</option>
+                    <option>Unit Three</option>
+                    <option>Unit Four</option>
+                    <option>Water Five</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-md-5 d-flex align-items-center">
+                <div class="form-group w-100">
+                  <label for="" class="mb-1 fs-16">Subscriber Number</label>
+                  <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="">
+                </div>
+              </div>
+              <div class="col-md-2 d-flex align-items-center">
+                <button class="btn go-pay fs-16 f_M btn-block">Show Bills</button>
+              </div>
+
+            </div>
+
+            <!-- Search Results -->
+            <div class="search-results pt-3">
+              <div class="row mx-0">
+
+                <div class="col-12" id="accordianId" role="tablist" aria-multiselectable="true">
+                  <div class="card">
+                    <div class="card-header secondary-alt-bg text-white" role="tab" id="section1HeaderId">
+                      <span class="mb-0 panel-title fs-16 f_B">
+                        <a data-toggle="collapse" data-parent="#accordianId" href="#section1ContentId" aria-expanded="true" aria-controls="section1ContentId">
+                          #Bill_Number
+                        </a>
+                      </span>
+                    </div>
+                    <div id="section1ContentId" class="collapse show" role="tabpanel" aria-labelledby="section1HeaderId">
+                      <div class="card-body">
+                        <table class="table table-striped">
+                          <thead>
+                            <tr>
+                              <th>Account Number</th>
+                              <th>Bill Type</th>
+                              <th>Bill Value</th>
+                              <th>Actions</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td scope="row">5982342345</td>
+                              <td>Electronic</td>
+                              <td>300 EGP</td>
+                              <td>
+                                <button class="btn primary-light-bg text-white fs-16 f_M btn-sm px-4">Pay</button>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <!--End Tab three Content-->
+        <!--Tab four Content-->
+        <div class="tab-pane fade" id="maintainance" role="tabpanel" aria-labelledby="maintainance-tab">
+          <div class="container px-4 pt-5 pb-4 inquiry-form">
+            <div class="row mx-0">
+
+              <div class="col-md-5 d-flex align-items-center">
+                <div class="form-group w-100">
+                  <label for="" class="mb-1 fs-16">Unit Number</label>
+                  <select class="form-control" name="" id="">
+                    <option>--select--</option>
+                    <option>Unit One</option>
+                    <option>Unit Two</option>
+                    <option>Unit Three</option>
+                    <option>Unit Four</option>
+                    <option>Water Five</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-md-5 d-flex align-items-center">
+                <div class="form-group w-100">
+                  <label for="" class="mb-1 fs-16">Subscriber Number</label>
+                  <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="">
+                </div>
+              </div>
+              <div class="col-md-2 d-flex align-items-center">
+                <button class="btn go-pay fs-16 f_M btn-block">Show Bills</button>
+              </div>
+
+            </div>
+
+            <!-- Search Results -->
+            <div class="search-results pt-3">
+              <div class="row mx-0">
+
+                <div class="col-12" id="accordianId" role="tablist" aria-multiselectable="true">
+                  <div class="card">
+                    <div class="card-header secondary-alt-bg text-white" role="tab" id="section1HeaderId">
+                      <span class="mb-0 panel-title fs-16 f_B">
+                        <a data-toggle="collapse" data-parent="#accordianId" href="#section1ContentId" aria-expanded="true" aria-controls="section1ContentId">
+                          #Bill_Number
+                        </a>
+                      </span>
+                    </div>
+                    <div id="section1ContentId" class="collapse show" role="tabpanel" aria-labelledby="section1HeaderId">
+                      <div class="card-body">
+                        <table class="table table-striped">
+                          <thead>
+                            <tr>
+                              <th>Account Number</th>
+                              <th>Bill Type</th>
+                              <th>Bill Value</th>
+                              <th>Actions</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td scope="row">5982342345</td>
+                              <td>Electronic</td>
+                              <td>300 EGP</td>
+                              <td>
+                                <button class="btn primary-light-bg text-white fs-16 f_M btn-sm px-4">Pay</button>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <!--Tab Five Content-->
+        <div class="tab-pane fade" id="Real_Estate_Installemnt" role="tabpanel" aria-labelledby="Real_Estate_Installemnt-tab">
+          <div class="container px-4 pt-5 pb-4 inquiry-form">
+            <div class="row mx-0">
+
+              <div class="col-md-5 d-flex align-items-center">
+                <div class="form-group w-100">
+                  <label for="" class="mb-1 fs-16">Unit Number</label>
+                  <select class="form-control" name="" id="">
+                    <option>--select--</option>
+                    <option>Unit One</option>
+                    <option>Unit Two</option>
+                    <option>Unit Three</option>
+                    <option>Unit Four</option>
+                    <option>Water Five</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-md-5 d-flex align-items-center">
+                <div class="form-group w-100">
+                  <label for="" class="mb-1 fs-16">Subscriber Number</label>
+                  <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="">
+                </div>
+              </div>
+              <div class="col-md-2 d-flex align-items-center">
+                <button class="btn go-pay fs-16 f_M btn-block">Show Bills</button>
+              </div>
+
+            </div>
+
+            <!-- Search Results -->
+            <div class="search-results pt-3">
+              <div class="row mx-0">
+
+                <div class="col-12" id="accordianId" role="tablist" aria-multiselectable="true">
+                  <div class="card">
+                    <div class="card-header secondary-alt-bg text-white" role="tab" id="section1HeaderId">
+                      <span class="mb-0 panel-title fs-16 f_B">
+                        <a data-toggle="collapse" data-parent="#accordianId" href="#section1ContentId" aria-expanded="true" aria-controls="section1ContentId">
+                          #Bill_Number
+                        </a>
+                      </span>
+                    </div>
+                    <div id="section1ContentId" class="collapse show" role="tabpanel" aria-labelledby="section1HeaderId">
+                      <div class="card-body">
+                        <table class="table table-striped">
+                          <thead>
+                            <tr>
+                              <th>Account Number</th>
+                              <th>Bill Type</th>
+                              <th>Bill Value</th>
+                              <th>Actions</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td scope="row">5982342345</td>
+                              <td>Electronic</td>
+                              <td>300 EGP</td>
+                              <td>
+                                <button class="btn primary-light-bg text-white fs-16 f_M btn-sm px-4">Pay</button>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <!--Tab Six Content-->
+        <div class="tab-pane fade" id="Cleaning_Services" role="tabpanel" aria-labelledby="Cleaning_Services-tab">
+          <div class="container px-4 pt-5 pb-4 inquiry-form">
+            <div class="row mx-0">
+
+              <div class="col-md-5 d-flex align-items-center">
+                <div class="form-group w-100">
+                  <label for="" class="mb-1 fs-16">Unit Number</label>
+                  <select class="form-control" name="" id="">
+                    <option>--select--</option>
+                    <option>Unit One</option>
+                    <option>Unit Two</option>
+                    <option>Unit Three</option>
+                    <option>Unit Four</option>
+                    <option>Water Five</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-md-5 d-flex align-items-center">
+                <div class="form-group w-100">
+                  <label for="" class="mb-1 fs-16">Subscriber Number</label>
+                  <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="">
+                </div>
+              </div>
+              <div class="col-md-2 d-flex align-items-center">
+                <button class="btn go-pay fs-16 f_M btn-block">Show Bills</button>
+              </div>
+
+            </div>
+
+            <!-- Search Results -->
+            <div class="search-results pt-3">
+              <div class="row mx-0">
+
+                <div class="col-12" id="accordianId" role="tablist" aria-multiselectable="true">
+                  <div class="card">
+                    <div class="card-header secondary-alt-bg text-white" role="tab" id="section1HeaderId">
+                      <span class="mb-0 panel-title fs-16 f_B">
+                        <a data-toggle="collapse" data-parent="#accordianId" href="#section1ContentId" aria-expanded="true" aria-controls="section1ContentId">
+                          #Bill_Number
+                        </a>
+                      </span>
+                    </div>
+                    <div id="section1ContentId" class="collapse show" role="tabpanel" aria-labelledby="section1HeaderId">
+                      <div class="card-body">
+                        <table class="table table-striped">
+                          <thead>
+                            <tr>
+                              <th>Account Number</th>
+                              <th>Bill Type</th>
+                              <th>Bill Value</th>
+                              <th>Actions</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td scope="row">5982342345</td>
+                              <td>Electronic</td>
+                              <td>300 EGP</td>
+                              <td>
+                                <button class="btn primary-light-bg text-white fs-16 f_M btn-sm px-4">Pay</button>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <!--End Tab four Content-->
+      </div>
+      <!--End Content of All Tabs-->
+    </div>
+  </div>
+
+
+  <!-- ==================================== -->
+
+  <!-- Start Footer  -->
+  <footer class="pt-5">
+    <div class="footer py-5">
+      <div class="row mx-0">
+
+        <div class="col-md-4">
+
+          <div class="intro">
+            <img src="assets/images/logo.png" alt="" width="170">
+            <p class="fs-14 mt-3">Orion is the exclusive one stop shop for all the services needed in Madinaty.
+              <br>
+              <br>
+              We at Orion are customer-focused, and we adopt a continuous improvement philosophy in everything we do to ensure the highest satisfaction levels for our customers and stakeholders.
+            </p>
+          </div>
+
+        </div>
+
+        <div class="col-md-4 quick-links pt-4">
+          <div class="px-5">
+            <h5>Quick Links</h5>
+            <ul class="px-4 pt-3">
+              <li class="mb-2"><a href="#">Our Services</a></li>
+              <li class="mb-2"><a href="#">About Orion</a></li>
+              <li class="mb-2"><a href="#">Orion App</a></li>
+              <li class="mb-2"><a href="#">Contact Us</a></li>
+              <li class="mb-2"><a href="#">Terms & Conditions</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-md-4 subscribe pt-4">
+          <h5>Subscribe to receive neswletters and notifications</h5>
+          <div class="form-group">
+            <input type="text" name="" id="" class="form-control" placeholder="Type Your Email" aria-describedby="helpId">
+            <button class="btn send-btn">
+              <i class="la la-send"></i>
+            </button>
+          </div>
+          <div class="social-icons d-flex justify-content-start align-items-center pt-4">
+            <a href="#" class="mx-2">
+              <i class="la la-facebook"></i>
+            </a>
+            <a href="#" class="mx-2">
+              <i class="la la-instagram"></i>
+            </a>
+            <a href="#" class="mx-2">
+              <i class="la la-twitter"></i>
+            </a>
+            <a href="#" class="mx-2">
+              <i class="la la-youtube"></i>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+    <div class="primary-light-bg text-center p-3">
+      <span class="fs-14 f_B">
+        &copy; all rights reserved 2022 - Orion Copmapny
+      </span>
+    </div>
+  </footer>
+  <!-- End Footer  -->
+
+  <!-- Back to top -->
+  <a href="#" class="back-to-top" style="display: none;">
+    <i class="la la-angle-double-up"></i>
+  </a>
+
+  <!-- JS -->
+  <script src="assets/js/jquery-3.3.1.js"></script>
+  <script src="assets/js/popper.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="./assets/slick/slick.min.js"></script>
+  <script src="assets/js/custom.js"></script>
+</body>
+
+</html>
