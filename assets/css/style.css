@@ -1330,3 +1330,266 @@ footer {
 .world-partner .animate__animated {
   --animate-duration: 3s;
 }
+
+@media (max-width: 1366px) and (min-width: 768px) {
+  .about .about-mar,
+  .services,
+  .pay-section .pay-tabs {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+  .pay-section .pay-tabs .nav-link {
+    width: 118px;
+    font-size: 14px;
+    line-height: 1.2;
+    height: 100px;
+    padding: 10px 0;
+  }
+}
+
+@media (max-width: 767px) {
+  /* .fs-8 {
+    font-size: 8px;
+  }
+  .fs-9 {
+    font-size: 9px;
+  }
+  .fs-10 {
+    font-size: 9px;
+  }
+  .fs-11 {
+    font-size: 10px;
+  }
+  .fs-12 {
+    font-size: 10px;
+  }
+  .fs-13 {
+    font-size: 10px;
+  }
+  .fs-14 {
+    font-size: 11px;
+  } */
+  .fs-15 {
+    font-size: 13px;
+  }
+  .fs-16 {
+    font-size: 13px;
+  }
+  .fs-18 {
+    font-size: 16px;
+  }
+  .fs-20 {
+    font-size: 18px;
+  }
+  .fs-22 {
+    font-size: 20px;
+  }
+  .fs-24 {
+    font-size: 20px;
+  }
+  .fs-26 {
+    font-size: 20px;
+  }
+  .fs-28 {
+    font-size: 24px;
+  }
+  .fs-30 {
+    font-size: 24px;
+  }
+  .fs-32 {
+    font-size: 26px;
+  }
+  .fs-34 {
+    font-size: 26px;
+  }
+  .fs-40 {
+    font-size: 28px;
+  }
+  .fs-42 {
+    font-size: 28px;
+  }
+  .fs-48 {
+    font-size: 28px;
+  }
+  .fs-60 {
+    font-size: 40px;
+  }
+  /* hidden in mobile and displayed in web */
+  .hidden-mob {
+    display: none !important;
+  }
+
+  .pt-5 {
+    padding-top: 1rem !important;
+  }
+  .pb-5 {
+    padding-bottom: 1rem !important;
+  }
+  .py-5 {
+    padding-top: 1rem !important;
+    padding-bottom: 1rem !important;
+  }
+  .px-5 {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+  .p-5 {
+    padding: 1rem !important;
+  }
+  .mt-5 {
+    margin-top: 1rem !important;
+  }
+  .mb-5 {
+    margin-bottom: 1rem !important;
+  }
+  .my-5 {
+    margin-top: 1rem !important;
+    margin-bottom: 1rem !important;
+  }
+  .mx-5 {
+    margin-left: 1rem !important;
+    margin-right: 1rem !important;
+  }
+  .m-5 {
+    margin: 1rem !important;
+  }
+  .pr-5 {
+    padding-right: 0 !important;
+  }
+
+  /*STYLES*/
+  body {
+    padding-top: 150px;
+  }
+  .header {
+    height: 150px;
+  }
+  .header .top-bar {
+    height: auto;
+  }
+  .header .top-bar .in-card {
+    font-size: 14px;
+    text-align: center;
+    margin-top: 6px;
+    margin-bottom: 6px;
+  }
+  .header .navbar {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .header .navbar-brand {
+    margin-left: 1rem;
+  }
+  .header .navbar-toggler {
+    margin-right: 1rem;
+  }
+  .header .navbar-nav {
+    background-color: #fafafa;
+    margin: auto !important;
+  }
+  .navbar .nav-item.login .nav-link {
+    margin: auto;
+  }
+  .navbar .nav-item.login {
+    margin: 14px auto 24px;
+  }
+  .navbar .nav-item.login .dropdown-menu::before {
+    top: 36px;
+    left: 0;
+    right: 0;
+  }
+  .carousel {
+    height: calc(55vh - 150px);
+  }
+  .con-pl {
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-bottom: 22px;
+  }
+  .pay-section .pay-tabs,
+  .faq,
+  .services,
+  .about .about-mar,
+  .footer {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .footer .social-icons {
+    justify-content: center !important;
+    margin-bottom: 15px;
+  }
+  .pay-section .pay-tabs .nav-tabs {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    overflow-scrolling: touch;
+  }
+  .pay-section .pay-tabs .nav-tabs .nav-item {
+    flex: 0 0 auto;
+    margin: 0;
+  }
+  .pay-section .pay-tabs .nav-tabs .nav-link {
+    width: 175px;
+  }
+  .pay-section .pay-tabs .nav-tabs::-webkit-scrollbar {
+    display: none;
+  }
+  .pay-section .inquiry-form {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+  .about {
+    height: auto;
+    padding: 40px 18px !important;
+  }
+  .about .nav-tabs .nav-link {
+    width: 100px;
+    height: 40px;
+    line-height: 25px;
+  }
+  .services .filter-services {
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    overflow-scrolling: touch;
+  }
+  .services .filter-services button {
+    flex: 0 0 auto;
+    margin: 0;
+  }
+  .services .filter-services::-webkit-scrollbar {
+    display: none;
+  }
+  .clients__ .container {
+    padding-left: 55px;
+    padding-right: 55px;
+  }
+  .clients__ .slick-prev {
+    left: -40px;
+  }
+  .clients__ .slick-next {
+    right: -30px;
+  }
+  .login-layout {
+    margin-top: -150px;
+  }
+  .log-head {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .login-tabs h1 {
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+  .login-card .form-group .form-icon::after {
+    top: 3px;
+  }
+  .login-card .sub {
+    padding-top: 14px !important;
+    padding-bottom: 14px !important;
+  }
+}
