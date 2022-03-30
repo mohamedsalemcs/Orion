@@ -1592,4 +1592,14 @@ footer {
     padding-top: 14px !important;
     padding-bottom: 14px !important;
   }
+  .search-results .card-body {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+  .search-results .card-body .table td,
+  .search-results .card-body .table th {
+    padding: 0.5rem;
+    font-size: 13px;
+    text-align: center;
+  }
 }
