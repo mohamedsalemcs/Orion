@@ -434,6 +434,10 @@ ul {
   background-color: #fff;
   /* box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16); */
 }
+
+.lang-drop .dropdown-menu.show {
+  transform: translate3d(-39px, 20px, 0px) !important;
+}
 .navbar .nav-item {
   margin-left: 1rem;
   margin-right: 1rem;
@@ -794,6 +798,7 @@ ul {
 }
 .services .card .card-text {
   color: var(--color-mute);
+  height: 34px;
 }
 
 .services .card .more a {
@@ -972,6 +977,10 @@ ul {
 .faq .card {
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
 }
+.faq .link {
+  color: var(--color-secondary-alt);
+  text-decoration: underline;
+}
 
 /* ************************************************************* */
 /* ************************************************************* */
@@ -1104,6 +1113,9 @@ footer {
   font-size: 18px;
   font-family: Optima_B;
   color: var(--color-secondary-alt);
+}
+.features .feature-desc {
+  height: 84px;
 }
 
 /***********************************/
