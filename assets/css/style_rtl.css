@@ -1153,8 +1153,8 @@ footer {
   top: 0;
 }
 
-.clients__ .slick-carousel .slick-item {
-  width: 300px;
+.clients__ .owl-carousel .item {
+  /* width: 300px; */
   height: 150px;
   background: #fff;
   border-radius: 8px;
@@ -1165,35 +1165,44 @@ footer {
   align-items: center;
   padding: 12px;
 }
-.clients__ .slick-carousel .slick-item img {
+.clients__ .owl-carousel .item img {
   max-width: 100%;
   border-radius: 8px;
   transition: 0.2s all ease-in-out;
 }
-.clients__ .slick-carousel .slick-item:hover img {
+.clients__ .owl-carousel .item:hover img {
   filter: grayscale(0);
 }
 
-.clients__ .slick-next {
-  right: -40px;
-}
-.clients__ .slick-prev {
-  left: -55px;
-}
-.clients__ .slick-prev,
-.clients__ .slick-next {
-  transform: unset;
-  top: 64px;
+.clients__ .owl-prev span,
+.clients__ .owl-next span {
+  display: none;
 }
 
-.clients__ .slick-prev:before {
+.clients__ .owl-next {
+  left: -40px;
+  position: relative;
+  transform: scaleX(-1);
+}
+.clients__ .owl-prev {
+  right: -45px;
+  position: relative;
+  transform: scaleX(-1);
+}
+.clients__ .owl-prev,
+.clients__ .owl-next {
+  /* transform: unset; */
+  /* top: 64px; */
+}
+
+.clients__ .owl-prev:before {
   content: '\f104';
   background: var(--color-secondary-alt);
   color: #fff;
   border-radius: 30px;
   padding: 4px;
 }
-.clients__ .slick-next:before {
+.clients__ .owl-next:before {
   content: '\f105';
   background: var(--color-secondary-alt);
   color: #fff;
@@ -1201,8 +1210,8 @@ footer {
   padding: 4px;
 }
 
-.clients__ .slick-prev:before,
-.clients__ .slick-next:before {
+.clients__ .owl-prev:before,
+.clients__ .owl-next:before {
   font-family: 'Line Awesome Free';
   font-size: 22px;
   opacity: 1;
@@ -1210,10 +1219,24 @@ footer {
   transition: 0.4s all ease-in-out;
 }
 
-.clients__ .slick-prev:hover:before,
-.clients__ .slick-next:hover:before {
+.clients__ .owl-prev:hover:before,
+.clients__ .owl-next:hover:before {
   background: #ffffff;
   color: var(--color-secondary);
+}
+.owl-theme .owl-nav [class*='owl-']:hover {
+  background: transparent;
+}
+.owl-theme .owl-nav {
+  margin-top: 10px;
+  position: absolute;
+  top: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.owl-dots {
+  display: none;
 }
 /*****************************/
 

@@ -81,34 +81,34 @@ $('.back-to-top').click(function () {
   return false;
 });
 
-$('.slick-carousel').slick({
-  slidesToShow: 6,
-  slidesToScroll: 1,
-  arrows: true,
-  dots: false,
-  infinite: true,
-  autoplay: true,
-  autoplaySpeed: 1000,
-  // centerMode: true,
-  speed: 600,
-  rtl: this.lang === 'ar',
-  responsive: [
-    {
-      breakpoint: 1024,
-      settings: {
-        slidesToShow: 3,
-        slidesToScroll: 1,
-      },
-    },
-    {
-      breakpoint: 480,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1,
-      },
-    },
-  ],
-});
+// $('.slick-carousel').slick({
+//   slidesToShow: 6,
+//   slidesToScroll: 1,
+//   arrows: true,
+//   dots: false,
+//   infinite: true,
+//   autoplay: true,
+//   autoplaySpeed: 1000,
+//   // centerMode: true,
+//   speed: 600,
+//   rtl: this.lang === 'ar',
+//   responsive: [
+//     {
+//       breakpoint: 1024,
+//       settings: {
+//         slidesToShow: 3,
+//         slidesToScroll: 1,
+//       },
+//     },
+//     {
+//       breakpoint: 480,
+//       settings: {
+//         slidesToShow: 1,
+//         slidesToScroll: 1,
+//       },
+//     },
+//   ],
+// });
 
 // const sections = document.querySelectorAll('section');
 // const navLi = document.querySelectorAll('nav li');
@@ -154,3 +154,25 @@ $('.filter-button').click(function () {
 //   $(this).removeClass('active');
 // }
 // $(this).addClass('active');
+
+$(document).ready(function () {
+  $('.owl-carousel').owlCarousel({
+    loop: true,
+    margin: 10,
+    nav: true,
+    rtl: true,
+    autoplay: true,
+    autoplayTimeout: 3000,
+    responsive: {
+      0: {
+        items: 1,
+      },
+      600: {
+        items: 3,
+      },
+      1000: {
+        items: 6,
+      },
+    },
+  });
+});
